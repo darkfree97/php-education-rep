@@ -1,0 +1,22 @@
+form {
+    border: 2px burlywood solid;
+    border-radius: 5px;
+    background-color: bisque;
+    padding: 4px;
+}
+label {
+    position: relative;
+    padding: 7px;
+}
+form div{
+    position: relative;
+    padding: 5px;
+    border-bottom: 1px solid pink;
+}
+input, select{
+    position: absolute;
+    right: 5px;
+}
+body{
+    background-color: aliceblue;
+}

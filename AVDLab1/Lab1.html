@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab1</title>
+    <link href="Lab1.css" rel="stylesheet">
+    <script src="scripts/jquery-3.1.0.min.js"></script>
+</head>
+<body>
+<h1>Реєстрація</h1>
+<form action="Les1.php" method="get" style="width: 20em;">
+    <div>
+        <label for="surname">Прізвище</label>
+        <input id="surname" name="surname" type="text" value="" oninput="valid_1()">
+    </div>
+    <div>
+        <label for="name">Ім'я</label>
+        <input id="name" name="name" type="text" value="" oninput="valid_2()">
+    </div>
+    <div>
+        <label for="f_name">По-Батькові</label>
+        <input id="f_name" name="f_name" type="text" value="" oninput="valid_3()">
+    </div>
+    <div>
+        <label for="birth_day">Дата народження</label>
+        <input id="birth_day" name="birth_day" type="date" style="width: 12.6em; height: 1.3em;" value="" oninput="valid_4()">
+    </div>
+    <div>
+        <label for="sex">Стать</label>
+        <!--<input id="sex" type="text">-->
+        <select id="sex" name="sex" style="width: 13em; height: 1.5em;" onchange="valid_5()">
+            <option>Ваша стать</option>
+            <option>Чоловіча</option>
+            <option>Жіноча</option>
+        </select>
+    </div>
+    <div>
+        <label for="m_mail">Електронна пошта</label>
+        <input id="m_mail" name="m_mail" type="email" value="" oninput="valid_6()">
+    </div>
+    <div>
+        <label for="phone_num">Номер телефону</label>
+        <input id="phone_num" name="phone_num" type="text" value="" oninput="valid_7()">
+    </div>
+    <div>
+        <label for="country">Країна</label>
+        <input id="country" name="country" type="text" value="Україна" oninput="valid_8()">
+    </div>
+    <div style="border-bottom: none;">
+        <button id="sub_mit">Відправити</button>
+    </div>
+</form>
+<div>
+    <h2>Повідомлення</h2>
+    <div id="message_1"></div>
+    <div id="message_2"></div>
+    <div id="message_3"></div>
+    <div id="message_4"></div>
+    <div id="message_5"></div>
+    <div id="message_6"></div>
+    <div id="message_7"></div>
+    <div id="message_8"></div>
+    <div id="message_10"></div>
+</div>
+<script src="scripts/Les1.js"></script>
+</body>
+</html>
